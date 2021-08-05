@@ -245,30 +245,23 @@ pages.addEventListener("mousewheel", function(e){
 });
 
 
-/*===== 모바일 터치 스크롤 설정 ====== */
-
 let start, move;
 
 pages.addEventListener('touchstart', function (e){
-    start =  e.touches[0].clientX;
+    start =  e.touches[0].clientY;
 });
 
 pages.addEventListener('touchmove', function (e){
-    move =  e.touches[0].clientX;
+    move =  e.touches[0].clientY;
 });
 
 pages.addEventListener('touchend', function (e){
-    if(start < move){ //move가 start보다 작으면 down
+    if(start > move){ //move가 start보다 작으면 down
         gotoNext();
-    }else if(start > move){ //move가 start보다 크면 up
+    }else if(start < move){ //move가 start보다 크면 up
         gotoPrev();
     }
 });
-
-
-
-
-
 
 
 /*---- 트랙패드로 슬라이드 실행 시 ----
