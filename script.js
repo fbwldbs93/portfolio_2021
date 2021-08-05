@@ -258,10 +258,10 @@ pages.addEventListener('touchmove', function (e){
 });
 
 pages.addEventListener('touchend', function (e){
-    if(start < move){ //move가 start보다 작으면 
-        gotoPrev();
-    }else if(start > move){ //move가 start보다 크면 
+    if(start < move){ //move가 start보다 작으면 down
         gotoNext();
+    }else if(start > move){ //move가 start보다 크면 up
+        gotoPrev();
     }
 });
 
