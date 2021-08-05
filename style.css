@@ -555,6 +555,8 @@ li{
 
 @media (max-width:1280px){
 
+
+    /*--- 해상도 1280 카드 애니메이션 설정 ----*/
     .myCardAnis0{
         animation-name:myCardAni0;
         animation-timing-function: ease-in-out;
@@ -607,5 +609,31 @@ li{
 
     .mockup{
         width:800px;
+    }
+}
+
+
+
+@media (max-width:414px){
+    .head-txt{
+        float:none;
+        height:30vh;
+        width:100%;
+        font-size:1.5rem;
+    }
+
+    .cards{
+        float:none;
+        height:70vh;
+        width:50%;
+        left:50%;
+        top:30vh;
+    }
+
+    .cards__item{
+        height:70%;
+        width:100%;
+        border-radius:15px;
+        /*transform: translate(-5%, 0);*/
     }
 }

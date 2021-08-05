@@ -244,6 +244,33 @@ pages.addEventListener("mousewheel", function(e){
     }
 });
 
+
+/*===== 모바일 터치 스크롤 설정 ====== */
+
+let start, move;
+
+pages.addEventListener('touchstart', function (e){
+    start =  e.touches[0].clientX;
+});
+
+pages.addEventListener('touchmove', function (e){
+    move =  e.touches[0].clientX;
+});
+
+pages.addEventListener('touchend', function (e){
+    if(start < move){ //move가 start보다 작으면 
+        gotoPrev();
+    }else if(start > move){ //move가 start보다 크면 
+        gotoNext();
+    }
+});
+
+
+
+
+
+
+
 /*---- 트랙패드로 슬라이드 실행 시 ----
 트랙패드가 마우스 스크롤보다 더 민감하게 반응하기 때문에. 
 
