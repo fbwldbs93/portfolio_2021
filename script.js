@@ -1,5 +1,29 @@
 
 
+
+/*---------------------------
+    윈도우 사이즈 높이800 이하로 줄이면 제어
+------------------------------*/
+
+const mask = document.querySelector(".mask");
+
+function resizeStop(){
+    if(window.innerWidth > 414){
+        if(window.innerHeight <= 800 ){
+            mask.style.display="block";
+            mask.textContent = "Sorry, window height is too small";
+        }else{
+            mask.style.display="none";
+        }
+    }
+
+    
+    
+}
+
+window.addEventListener("resize", resizeStop);
+
+
 /* ------------------------
     마우스 따라다니는 원
 --------------------------*/
@@ -111,10 +135,11 @@ function mouseSet(x, y){
     글자 자동 타이핑
 --------------------------*/
 
-const typedTxtSpan = document.querySelector(".head-txt__txt");
+const typedTxtSpan = document.querySelector(".txt-js");
 const cursorSpan = document.querySelector(".head-txt__cursor");
 
-const txtArray = ["I am publisher", "I am designer", "I have sense of UX"];
+//const txtArray = ["I am publisher", "I am designer", "I have sense of UX"];
+const txtArray = ["can build awesome website", "have design skills", "have sense of UX"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTxtDelay = 2000;
@@ -430,3 +455,65 @@ function progressReset(){
     
 }
 
+//sec-3 영역
+
+/*---------------------------
+    view info 버튼 modal 팝업 등장
+------------------------------*/
+
+const modal = document.querySelector(".mock-modal");
+const infoBtn = document.querySelector(".info-btn");
+const modalXBtn = document.querySelector(".title-icon");
+
+function popModal(){
+    modal.style.display = "block";
+}
+
+infoBtn.addEventListener("click", popModal);
+
+function xModal(){
+    modal.style.display = "none";
+}
+modalXBtn.addEventListener("click", xModal)
+
+
+
+//sec-4 영역
+
+/*---------------------------
+    이메일 copy
+------------------------------*/
+
+const copyBtn = document.querySelector(".copy-email");
+const copyInput = document.getElementById("email-val");
+
+function copyEmail(){
+    //console.log(copyInput.value);
+    copyInput.select();
+    copyInput.setSelectionRange(0, 9999); //for mobile devices
+
+    document.execCommand("copy");
+
+    const copyModal = document.createElement("p");
+
+    document.getElementById("sec-4").appendChild(copyModal);
+
+    copyModal.classList.add("copy-modal");
+
+    copyModal.innerText =  "copied it, thank you!";
+
+    const show = copyModal.style.display="block";
+
+    if(show){
+        setTimeout(function(){
+            copyModal.style.display="none";
+        }, 2000);
+    }
+    
+
+
+
+    //alert("Copied the text " + copyInput.value);
+}
+
+copyBtn.addEventListener("click", copyEmail);

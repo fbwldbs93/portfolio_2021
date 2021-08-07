@@ -5,43 +5,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>jiyun's portfolio</title>
         <link rel="stylesheet" href="style.css"/>
+
+        <!--jquery plugin-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--remix icon-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     </head>
     <body>
+        <div class="mask"></div>
         <div id="portfolio-wrap" class="pages">
             
             <section id="sec-1" class="sec">
-                <div class="head-txt">
-                    <p class="head-txt__type-js">
-                        <span class="head-txt__txt"></span>
-                        <span class="head-txt__cursor">&nbsp;</span>
-                    </p>
-                </div>
-                <div class="cards">
-                    <div class="cards__item">
-                        <div class="cards__top">
-                            <p class="person"></p>
-                        </div>
-                    </div>
-                    <div class="cards__item"></div>
-                    <div class="cards__item"></div>
-                    <div class="cards__item"></div>
-                    <div class="cards__item"></div>
-                    <div class="cards__item cards__my-item">
-                        <p class="cards__profile">Jiyun</p>
-                        <p class="cards__details">
-                            <span class="profile-title">
-                                web publisher with design sense
-                            </span>
-                            <span class="profile-details">
-
-                            </span>
+                <div class="sec1-wrap">
+                    <div class="head-txt">
+                        <p class="head-txt__type-js">
+                            <span class="head-txt__txt">I think you need a person who <span class="txt-js"></span></span>
+                            <span class="head-txt__cursor">&nbsp;</span>
                         </p>
-                        <p class="cards__anis"></p>
                     </div>
-                    <div class="cards__item"></div>
-                    <div class="cards__item"></div>
-                    <div class="cards__item"></div>
+                    <div class="cards">
+                        <div class="cards__item">
+                            <div class="cards__top">
+                                <p class="person"><b>Scroll</b> <span class="white-txt">to pick me!</span></p>
+                            </div>
+                        </div>
+                        <div class="cards__item"></div>
+                        <div class="cards__item"></div>
+                        <div class="cards__item"></div>
+                        <div class="cards__item"></div>
+                        <div class="cards__item cards__my-item">
+                            <p class="cards__profile">Jiyun</p>
+                            <div class="cards__details">
+                                <ul class="profile-title">
+                                    <li>
+                                        <p class="profile-icon">
+                                            <i class="ri-arrow-right-s-fill"></i>
+                                        </p>
+                                        <p class="profile-txt">
+                                            interested in css animation
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="profile-icon">
+                                            <i class="ri-arrow-right-s-fill"></i>
+                                        </p>
+                                        <p class="profile-txt">
+                                            prefer to use pure javascript
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="profile-icon">
+                                            <i class="ri-arrow-right-s-fill"></i>
+                                        </p>
+                                        <p class="profile-txt">
+                                            knowing importance of web accessibility
+                                        </p>
+                                    </li>
+                                </ul>
+                                <span class="profile-details">
+
+                                </span>
+                            </div>
+                            <p class="cards__anis"></p>
+                        </div>
+                        <div class="cards__item"></div>
+                        <div class="cards__item"></div>
+                        <div class="cards__item"></div>
+                    </div>
                 </div>
             </section>
             <section id="sec-2" class="sec">
@@ -51,19 +82,22 @@
                             <svg class="round" viewbox="0 0 100 100" data-percent="90">
                                 <circle cx="50" cy="50" r="40" />  
                             </svg>
-                            <p class="skill__txt">HTML <span class="skill__percent-num"></span></p>
+                            <p class="skill__txt"><span class="skill__percent-num"></span></p>
+                            <p class="skill__title">HTML</p>
                         </li>
                         <li class="skill__li">
                             <svg class="round" viewbox="0 0 100 100" data-percent="80">
                                 <circle cx="50" cy="50" r="40" />  
                             </svg>
-                            <p class="skill__txt">CSS <span class="skill__percent-num"></span></p>
+                            <p class="skill__txt"><span class="skill__percent-num"></span></p>
+                            <p class="skill__title">CSS</p>
                         </li>
                         <li class="skill__li">
                             <svg class="round" viewbox="0 0 100 100" data-percent="55">
                                 <circle cx="50" cy="50" r="40" />  
                             </svg>
-                            <p class="skill__txt">JS <span class="skill__percent-num"></span></p>
+                            <p class="skill__txt"><span class="skill__percent-num"></span></p>
+                            <p class="skill__title">JS</p>
                         </li>
                     </ul>
                     <ul class="skill__ul">
@@ -71,40 +105,127 @@
                             <svg class="round" viewbox="0 0 100 100" data-percent="85">
                                 <circle cx="50" cy="50" r="40" />  
                             </svg>
-                            <p class="skill__txt">PSD <span class="skill__percent-num"></span></p>
+                            <p class="skill__txt"><span class="skill__percent-num"></span></p>
+                            <p class="skill__title">PSD</p>
                         </li>
                         <li class="skill__li">
                             <svg class="round" viewbox="0 0 100 100" data-percent="88">
                                 <circle cx="50" cy="50" r="40" />  
                             </svg>
-                            <p class="skill__txt">ILLUST <span class="skill__percent-num"></span></p>
+                            <p class="skill__txt"><span class="skill__percent-num"></span></p>
+                            <p class="skill__title">ILLUST</p>
                         </li>
                     </ul>
                 </div>
             </section>
             <section id="sec-3" class="sec">
-                <div class="mockup mock-pc">
-                    <div class="mockup__mac">
-                        <img src="source/mac_mockup.png"/>
-                    </div>
-                    <ul class="mockup__pc">
-                        <li class="mockup__img-item">
-                            <img src="source/t_1.jpg"/>
-                        </li>
-                    </ul>
+                <div class="info-btn-wrap">
+                    <button type="button" class="info-btn">
+                        view info
+                    </button>
                 </div>
-                <div class="mockup mock-m">
-                    <div class="mockup__iphone">
-                        <img src="source/phone_mockup.png"/>
+                <div class="mock-wrap">
+                    <div class="mockup mock-pc">
+                        <div class="mockup__mac">
+                            <img src="source/mac_mockup.png"/>
+                        </div>
+                        <ul class="mockup__pc">
+                            <li class="mockup__img-item">
+                                <img src="source/t_1.jpg"/>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="mockup__m">
-                        <li class="mockup__img-item">
-                            <img src="source/m_t_1.jpg"/>
-                        </li>
-                    </ul>
+                    <div class="mockup mock-m">
+                        <div class="mockup__iphone">
+                            <img src="source/phone_mockup.png"/>
+                        </div>
+                        <ul class="mockup__m">
+                            <li class="mockup__img-item">
+                                <img src="source/m_t_1.jpg"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mock-modal">
+                    <div class="modal-title">
+                        <p class="title-txt">
+                            project Tradeen
+                        </p>
+                        <p class="title-icon">
+                            <i class="ri-close-line"></i>
+                        </p>
+                    </div>
+                    <div class="modal-detail">
+                        <ul>
+                            <li>
+                                <p class="modal-detail__q q-txt">
+                                    what I contribute to Tradeen Project
+                                </p>
+                            </li>
+                            <li>
+                                <p class="modal-detail__q">
+                                    number of participants 
+                                </p>
+                                <p class="modal-detail__a">
+                                    2
+                                </p>
+                            </li>
+                            <li>
+                                <p class="modal-detail__q">
+                                    0. work duration
+                                </p>
+                                <p class="modal-detail__a">
+                                    2020.03 ~ 2021.03
+                                </p>
+                            </li>
+                            <li>
+                                <p class="modal-detail__q">
+                                    1. project proposal
+                                </p>
+                                <p class="modal-detail__a">
+                                    planned Tradeen website by referring to the Musinsa page
+                                </p>
+                            </li>
+                            <li>
+                                <p class="modal-detail__q">
+                                    2. design
+                                </p>
+                                <p class="modal-detail__a">
+                                    designed using Illustrator and adobe XD
+                                </p>
+                            </li>
+                            <li>
+                                <p class="modal-detail__q">
+                                    3. develop
+                                </p>
+                                <p class="modal-detail__a">
+                                    build web front side with html, css, javascript.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="modal-detail__q">
+                                    4. and maintain website.
+                                </p>
+                            </li>
+                        </ul>
+                        <p class="tradeen-link">
+                            <a href="https://tradeen.co.kr/" title="tradeen">
+                                tradeen
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </section>
-            <section id="sec-4" class="sec"></section>
+            <section id="sec-4" class="sec">
+                <div class="sec-4-wrap">
+                    <p class="bye-txt">
+                        if you're interested in Jiyun, please copy her email
+                    </p>
+                    <input type="text" value="fbwldbs93@naver.com" id="email-val">
+                    </input>
+                    <button class="copy-email">click to copy email</button>
+                </div>
+            </section>
         </div>
         <!--<span class="mouse-circle">
         </span>-->
